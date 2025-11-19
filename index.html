@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita Modern</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Berita Modern</div>
+        <nav>
+            <a href="#home">Beranda</a>
+            <a href="#politik">Politik</a>
+            <a href="#olahraga">Olahraga</a>
+            <button id="add-news-btn">Tambah Berita</button>
+        </nav>
+    </header>
+
+    <main id="news-container">
+        <!-- Berita akan dimuat di sini -->
+    </main>
+
+    <!-- Modal untuk Tambah Berita -->
+    <div id="news-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Tambah Berita Baru</h2>
+            <form id="news-form">
+                <label for="title">Judul:</label>
+                <input type="text" id="title" required>
+                
+                <label for="content">Isi Berita:</label>
+                <textarea id="content" required></textarea>
+                
+                <label for="image">Cuplikan Gambar:</label>
+                <input type="file" id="image" accept="image/*">
+                <img id="image-preview" style="display:none; max-width:200px; margin-top:10px;">
+                
+                <button type="submit">Simpan Berita</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
